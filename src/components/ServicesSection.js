@@ -2,25 +2,24 @@ import React from "react";
 
 function ServicesSection() {
   const services = [
-    { title: "Digital Banking", desc: "Securely manage your finances." },
-    { title: "Mobile Solutions", desc: "Access accounts anytime, anywhere." },
-    { title: "Financial Analytics", desc: "Gain insights for smarter decisions." }
+    { title: "Software Development", desc: "Custom software tailored to business needs." },
+    { title: "Web Hosting", desc: "Secure and scalable hosting solutions." },
+    { title: "Database Management", desc: "Efficient data handling for businesses." },
+    { title: "Cloud Solutions", desc: "Powerful cloud infrastructure for enterprises." }
   ];
 
   return (
-    <section id="services" className="py-5 text-center">
-      <div className="container">
-        <h2 className="display-5 fw-bold">Our Services</h2>
-        <div className="row mt-4">
-          {services.map((service, index) => (
-            <div key={index} className="col-md-4">
-              <div className="card shadow-lg p-4">
-                <h3 className="fw-bold">{service.title}</h3>
-                <p className="text-muted">{service.desc}</p>
-              </div>
+    <section id="services" className="container py-5 text-center">
+      <h2 className="fw-bold" data-aos="fade-up">Our Services</h2>
+      <div className="row mt-4">
+        {services.map((service, index) => (
+          <div key={index} className="col-md-3 d-flex align-items-stretch" data-aos="zoom-in">
+            <div className="card shadow-lg p-4 w-100">
+              <h4 className="fw-bold">{service.title}</h4>
+              <p className="text-muted">{service.desc}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
