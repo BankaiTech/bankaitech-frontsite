@@ -7,13 +7,12 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
-import WhyUs from "./components/WhyUs";  // ✅ Import WhyUs component
+import WhyUs from "./components/WhyUs"; 
 import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });  // ✅ Initialize AOS for animations
-    // ✅ Scroll to top on page reload
+    AOS.init({ duration: 1000 });
     window.scrollTo(0, 0);
   }, []);
 
@@ -23,7 +22,7 @@ function App() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
-      <WhyUs />  {/* ✅ Add the WhyUs section here */}
+      <WhyUs />
       <Footer />
     </div>
   );
