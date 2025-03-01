@@ -5,7 +5,9 @@ function AboutSection() {
     <section id="about" className="container text-center py-5" data-aos="fade-right">
       <h2 className="fw-bold">Who We Are</h2>
       <p className="text-muted mt-3">
-        We are a team of 4 experts specializing in frontend (React) and backend (Python). We also manage web hosting and databases, ensuring high-performance digital solutions for businesses.
+        At <strong>BankaiTech</strong>, we specialize in **software development, web hosting, and database management**. 
+        Our expert team ensures high-performance digital solutions that drive business success.  
+        We leverage **AI integration** to automate processes, enhance decision-making, and deliver **faster, smarter results** for our clients.
       </p>
     </section>
   );
